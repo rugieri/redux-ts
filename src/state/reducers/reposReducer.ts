@@ -1,10 +1,10 @@
-interface ReposState {
+interface RepoState {
   loading: boolean;
   error: string | null;
   data: string [];
 }
 
-const reducer = (state: ReposState, action: any) => {
+const reducer = (state: RepoState, action: any) => {
   switch (action.type) {
     case 'search_repos':
       return { loading: true, error: null, data: [] };
