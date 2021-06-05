@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+#redux-ts
+A small NPM  api package search with redux and typescript
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
