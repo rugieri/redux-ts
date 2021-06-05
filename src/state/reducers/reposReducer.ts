@@ -6,14 +6,17 @@ interface RepoState {
   data: string [];
 };
 
+const initialState = {
+  loading: false,
+  error: null,
+  data: []
+}
 
 
-
-const reducer = (state: RepoState, action: Action ) : RepoState => {
-  if (action.type === 'search_repos_success') {
-     action.payload
-  };
-
+const reducer = (
+  state: RepoState = initialState, 
+  action: Action ) : RepoState => {
+  
   switch (action.type) {
     case ActionType.SEARCH_REPOS:
       return { loading: true, error: null, data: [] };
