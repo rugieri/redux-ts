@@ -1,4 +1,4 @@
-#redux-ts
+# redux-ts
 A small NPM  api package search with redux and typescript
 
 ## Getting Started with Create React App
