@@ -20,6 +20,9 @@ const ReposList: React.FC = () => {
       <input value={term} onChange={e => setTerm(e.target.value)}/>
       <button className='btn btn-primary'>Search</button>
     </form>
+    {error && <h3>{error} </h3> }
+    {!error && !loading &&
+     data.map((name) => <div key={name}>{name}</div>)}
   </div>
   )
 };
